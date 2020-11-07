@@ -3,6 +3,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class client {
+
     public static void main(String[] args){
         Socket clientSocket = null;
         System.out.println("Please enter username: ");
@@ -10,7 +11,9 @@ public class client {
         String name = scan.nextLine();
         scan.close();
         int port = 4444;
+
         try {
+            //Initializing Socket Connection at 'localhost:4444'
             clientSocket = new Socket("localhost", port);
             Thread.sleep(1000);
             Thread server = new Thread(new serverThread(clientSocket, name));
@@ -23,4 +26,5 @@ public class client {
             e.printStackTrace();
         }
     }
+
 }
