@@ -4,12 +4,12 @@ import java.nio.file.Paths;
 
 public class Profile {
 
-    static String username;
+    static public String username;
     static String password;
-    static String[] likings = new String[7];
+    static public String[] likings = new String[7];
 	static String fileName = "profile.txt";
 
-	public static String load() {
+	public static void load() {
 		String profileData = "";
     	try {
 			profileData =  new String(Files.readAllBytes(Paths.get(fileName)));
@@ -39,7 +39,7 @@ public class Profile {
 		likings[likings.length-1] = tmp.substring(0, pos);
 		tmp = tmp.substring(pos+1);
 
-    	return profileData;
+    	return;
 	}
 
 	public static void save(){
