@@ -1,17 +1,19 @@
+package server;
+
 import java.net.*;
 import java.io.*;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-public class clientThread implements Runnable {
-    ArrayList<clientThread> clients = new ArrayList<clientThread>();
+public class ClientThread implements Runnable {
+    ArrayList<ClientThread> clients = new ArrayList<ClientThread>();
 
     private String username;
     private String password;
     private Socket socket;
     private PrintWriter out;
 
-    public clientThread(String username, String password, Socket socket){
+    public ClientThread(String username, String password, Socket socket){
         this.username = username;
         this.password = password;
         this.socket = socket;
