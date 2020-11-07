@@ -1,11 +1,24 @@
-public class profile {
+public class Profile {
   
   private String username;
   private String password;
+  private String[][] accounts = {{"SimonM", "a2vd"},{"SimonG", "aqef"},{"Alice", "jdnd"},
+	    {"Jannis", "qevu"},{"Katharina", "12de"},{"Oliver", "cacr"}};
   
-  public profile(String username, String password) 
+  public Profile(String username, String password) 
 	    {
 	        this.username = username;
 	        this.password = password;
 	    }
+
+  public boolean checkPassword()
+	    {
+	    	for (i = 1; i <= 6; i++) {
+	    		if((username.equals(accounts[i][0])) && (password.equals(accounts[i][1])))
+	    		return true;
+	    	}
+	    	
+	    	return false;
+	    }
+
 }
