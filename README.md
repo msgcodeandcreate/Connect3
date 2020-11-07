@@ -24,12 +24,11 @@ Describe how to install / setup your local environement / add link to demo versi
 ## Features
 List of features ready and TODOs for future development
 * Basic Chat functionality (Server-Chats)
-* Awesome feature 3
 
 To-do list:
 * matching feature
 * UI
-* Server Management
+* More Server Management and Tools
 
 ## Status
 Project is _in progress_
