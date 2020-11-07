@@ -1,4 +1,3 @@
-package server;
 
 import java.net.*;
 import java.io.*;
@@ -49,12 +48,42 @@ public class ClientThread extends Server implements Runnable {
         }
     }
 
+
+    private String[][] accounts;
+
+
+
     public String checkInput(String input){
         //Get username
         int position = input.indexOf(">");
         String newName = input.substring(0, position-1);
 
+        //testen ob bestimmter Befehl eingegeben wurde
+        switch(input){
+            case "/whoison":
+                String users = "";
+                for (String name : usersOnline){
+                    if (name != null)
+                        users += name + "|";
+                }
+                break;
+            input = "/whoison: " + "|" + users;
+            case "/help":
+                System.out.println("
+                \help: show this;
+                \whoison: shows who is currently online;
+                \showProfile NAME : shows the profile of NAME;
+                ");
+                break;
+            case "\showProfile NAME":
+                
+        }
+
+
+
         //List all users currently considered online
+
+        /*
         if (input.contains("/whoison")){
             String users = "";
             for (String name : usersOnline){
@@ -63,6 +92,8 @@ public class ClientThread extends Server implements Runnable {
             }
             input = "/whoison: " + "|" + users;
         }
+        */
+
         //TODO (curse word filter)
 
         //Checks if username belongs to new user
