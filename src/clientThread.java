@@ -6,13 +6,13 @@ import java.util.ArrayList;
 public class clientThread implements Runnable {
     ArrayList<clientThread> clients = new ArrayList<clientThread>();
 
-    private String name;
+    private String username;
     private String password;
     private Socket socket;
     private PrintWriter out;
 
-    public clientThread(String name, String password, Socket socket){
-        this.name = name;
+    public clientThread(String username, String password, Socket socket){
+        this.username = username;
         this.password = password;
         this.socket = socket;
     }
