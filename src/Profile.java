@@ -2,8 +2,7 @@ public class Profile {
   
   private String username;
   private String password;
-  private String[][] accounts = {{"SimonM", "a2vd"},{"SimonG", "aqef"},{"Alice", "jdnd"},
-	    {"Jannis", "qevu"},{"Katharina", "12de"},{"Oliver", "cacr"}};
+  private String[][] accounts;
   
   public Profile(String username, String password) 
   {
