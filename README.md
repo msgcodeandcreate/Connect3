@@ -13,7 +13,10 @@ Socket based Chat Application
 Chat Application designed during msg Code & Create event 2020.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Login](./img/Login.png)
+![Profile](./img/Profile.png)
+![Chat](./img/Chat.png)
+
 
 ## Technologies
 * JavaFX
