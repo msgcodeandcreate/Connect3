@@ -19,8 +19,9 @@ public class Profile {
 	  for (int i = 1; i <= 6; i++){
 		  if((username.equals(accounts[i][0])) && (password.equals(accounts[i][1])))
 	    	  return true;
-	    	}
+	  }
 	    	
+<<<<<<< HEAD
 	    	return false;
 		}
 
@@ -36,5 +37,9 @@ public class Profile {
 
 	}
 	
+=======
+	  return false;
+  }
+>>>>>>> 71fff0932063fe07fec2209f97da6568e8509b15
 
 }

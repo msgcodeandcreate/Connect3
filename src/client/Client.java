@@ -1,8 +1,9 @@
+package client;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class client {
+public class Client {
 
     public static void main(String[] args){
         Socket clientSocket = null;
@@ -16,7 +17,7 @@ public class client {
             //Initializing Socket Connection at 'localhost:4444'
             clientSocket = new Socket("localhost", port);
             Thread.sleep(1000);
-            Thread server = new Thread(new serverThread(clientSocket, name));
+            Thread server = new Thread(new ServerThread(clientSocket, name));
             server.start();
         } catch (IOException e){
             System.err.println("Connection Failed.");
