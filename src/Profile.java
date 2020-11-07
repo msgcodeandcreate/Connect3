@@ -1,40 +1,53 @@
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class Profile {
-  
-  private String username;
-  private String password;
-  private String[][] accounts;
-  
-  public Profile(String username, String password) 
-  {
-	  this.username = username;
-	  this.password = password;
 
-	  accounts = updateAccounts(this, accounts);
+    private String username;
+    private String password;
+	static String fileName = "profile.txt";
 
-  }
 
-  public boolean checkPassword()
-  {
-	  for (int i = 0; i < accounts.length; i++){
-		  if((username.equals(accounts[i][0])) && (password.equals(accounts[i][1])))
-	    	  return true;
-	  }
-	    	
-	    	return false;
+    public Profile(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+	public static String load() {
+    	try {
+			return new String(Files.readAllBytes(Paths.get(fileName)));
+		} catch (IOException e) {
+    		System.out.println(e.fillInStackTrace());
+    		return "";
 		}
-
-
-  public String[][] updateAccounts(Profile newProfile, String[][] accounts){
-
-	String[][] new_accounts = new String[accounts.length+1][2];
-	for(int i=0; i<accounts.length; i++){
-		new_accounts[i][0] = accounts[i][0];
-		new_accounts[i][1] = accounts[i][1];			
 	}
-	new_accounts[accounts.length][0] = newProfile.username;
-	new_accounts[accounts.length][1] = newProfile.password;
 
-	return new_accounts;
+	public static void save(String profileData){
+		try {
+			FileWriter fw = new FileWriter("profile.txt");
+			fw.write(profileData);
+			fw.close();
+			System.out.println("Successfully wrote to the file.");
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
 	}
+
+	public static void create(){
+		try {
+			File f = new File("profile.txt");
+			if (f.createNewFile()) {
+				System.out.println("File created: " + f.getName());
+			} else {
+				System.out.println("File already exists.");
+			}
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+	}
+
 
 }
