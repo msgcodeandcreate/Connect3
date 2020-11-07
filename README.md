@@ -1,5 +1,5 @@
 # Connect3
-Java based Socket Chat Application
+Socket based Chat Application
 
 ## Table of contents
 * [General info](#general-info)
@@ -10,28 +10,26 @@ Java based Socket Chat Application
 * [Status](#status)
 
 ## General info
-Chat Application designed during msg Code & Create event 2020.  
+Chat Application designed during msg Code & Create event 2020.
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* JavaFX
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
 
 ## Features
 List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
+* Basic Chat functionality (Server-Chats)
 * Awesome feature 3
 
 To-do list:
-* Basic Chat functionality
 * matching feature
+* UI
+* Server Management
 
 ## Status
 Project is _in progress_
