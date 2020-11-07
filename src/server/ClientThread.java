@@ -1,32 +1,43 @@
 package server;
 
+import client.Client;
+
 import java.net.*;
 import java.io.*;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-public class ClientThread implements Runnable {
-    ArrayList<ClientThread> clients = new ArrayList<ClientThread>();
+public class ClientThread extends Server implements Runnable {
 
-    private String username;
-    private String password;
     private Socket socket;
+    private BufferedReader in;
     private PrintWriter out;
 
-    public ClientThread(String username, String password, Socket socket){
-        this.username = username;
-        this.password = password;
+    public ClientThread(Socket socket){
         this.socket = socket;
     }
 
     @Override
     public void run(){
-        try{
-            out = new PrintWriter(socket.getOutputStream());
-        }catch (IOException e){
+        try {
+            out = new PrintWriter(socket.getOutputStream(), true);
+            in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
+            while (!socket.isClosed()){
+                String input = in.readLine();
+                if (input != null){
+                    for (ClientThread client : clients){
+                        client.getWriter().write(input);
+                    }
+                }
+            }
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+    public PrintWriter getWriter(){
+        return out;
+    }
 
 }
