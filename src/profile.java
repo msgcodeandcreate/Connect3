@@ -6,16 +6,16 @@ public class Profile {
 	    {"Jannis", "qevu"},{"Katharina", "12de"},{"Oliver", "cacr"}};
   
   public Profile(String username, String password) 
-	    {
-	        this.username = username;
-	        this.password = password;
-	    }
+  {
+	  this.username = username;
+	  this.password = password;
+  }
 
   public boolean checkPassword()
-	    {
-	    	for (i = 1; i <= 6; i++) {
-	    		if((username.equals(accounts[i][0])) && (password.equals(accounts[i][1])))
-	    		return true;
+  {
+	  for (i = 1; i <= 6; i++){
+		  if((username.equals(accounts[i][0])) && (password.equals(accounts[i][1])))
+	    	  return true;
 	    	}
 	    	
 	    	return false;
