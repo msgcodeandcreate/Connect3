@@ -1,8 +1,5 @@
 package server;
 
-import client.Client;
-
-import java.awt.*;
 import java.net.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -12,7 +9,7 @@ public class Server {
     private static final int portNumber = 4444;
 
     private int serverPort;
-    private List<ClientThread> clients; // or "protected static List<ClientThread> clients;"
+    private ArrayList<ClientThread> clients; // or "protected static List<ClientThread> clients;"
 
     public static void main(String[] args){
         Server server = new Server(portNumber);
@@ -23,7 +20,7 @@ public class Server {
         this.serverPort = portNumber;
     }
 
-    public List<ClientThread> getClients(){
+    public ArrayList<ClientThread> getClients(){
         return clients;
     }
 
