@@ -1,4 +1,4 @@
-# ConnectThree
+# Connect3
 Java based Socket Chat Application
 
 ## Table of contents
