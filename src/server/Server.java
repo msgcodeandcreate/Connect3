@@ -9,36 +9,51 @@ import java.util.ArrayList;
 
 public class Server {
 
-    static int port = 4444;
-    static ServerSocket serverSocket = null;
+    private static final int portNumber = 4444;
 
-    public static void main(String[] args) {
+    private int serverPort;
+    private List<ClientThread> clients; // or "protected static List<ClientThread> clients;"
 
-        try {
-            serverSocket = new ServerSocket(port);
-            acceptClients();
-        } catch (IOException e) {
-            System.err.println("Could not listen on port " + port + ".");
-            System.exit(1);
-        }
-
+    public static void main(String[] args){
+        Server server = new Server(portNumber);
+        server.startServer();
     }
 
-    public static void acceptClients() {
-        ArrayList clients = new ArrayList<ClientThread>();
-        while (true){
-            try {
+    public ChatServer(int portNumber){
+        this.serverPort = portNumber;
+    }
+
+    public List<ClientThread> getClients(){
+        return clients;
+    }
+
+    private void startServer(){
+        clients = new ArrayList<ClientThread>();
+        ServerSocket serverSocket = null;
+        try {
+            serverSocket = new ServerSocket(serverPort);
+            acceptClients(serverSocket);
+        } catch (IOException e){
+            System.err.println("Could not listen on port: "+serverPort);
+            System.exit(1);
+        }
+    }
+
+    private void acceptClients(ServerSocket serverSocket){
+
+        System.out.println("server starts port = " + serverSocket.getLocalSocketAddress());
+        while(true){
+            try{
                 Socket socket = serverSocket.accept();
-                ClientThread client = new ClientThread(socket);
+                System.out.println("accepts : " + socket.getRemoteSocketAddress());
+                ClientThread client = new ClientThread(this, socket);
                 Thread thread = new Thread(client);
                 thread.start();
                 clients.add(client);
-                System.out.println("Client Joined.");
-            } catch (IOException e){
-                System.out.println("Accept failed on: " + port);
+            } catch (IOException ex){
+                System.out.println("Accept failed on : "+serverPort);
             }
         }
     }
-
 
 }
