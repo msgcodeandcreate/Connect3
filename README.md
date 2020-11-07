@@ -27,6 +27,7 @@ Describe how to install / setup your local environement / add link to demo versi
 ## Features
 List of features ready and TODOs for future development
 * Basic Chat functionality (Server-Chats)
+* Dark Mode by default
 
 To-do list:
 * matching feature
