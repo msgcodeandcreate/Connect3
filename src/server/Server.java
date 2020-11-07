@@ -11,6 +11,9 @@ public class Server {
     private int serverPort;
     private ArrayList<ClientThread> clients; // or "protected static List<ClientThread> clients;"
 
+    public Server() {
+    }
+
     public static void main(String[] args){
         Server server = new Server(portNumber);
         server.startServer();
