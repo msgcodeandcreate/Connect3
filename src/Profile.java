@@ -21,11 +21,11 @@ public class Profile {
 	    	  return true;
 	  }
 	    	
-<<<<<<< HEAD
 	    	return false;
 		}
 
-	public String[][] updateAccounts(Profile newProfile, String[][] accounts){
+
+  public String[][] updateAccounts(Profile newProfile, String[][] accounts){
 
 	String[][] new_accounts = new String[accounts.length+1][2];
 	for(int i=0; i<accounts.length; i++){
@@ -35,11 +35,7 @@ public class Profile {
 	new_accounts[accounts.length][0] = newProfile.username;
 	new_accounts[accounts.length][1] = newProfile.password;
 
+	return new_accounts;
 	}
-	
-=======
-	  return false;
-  }
->>>>>>> 71fff0932063fe07fec2209f97da6568e8509b15
 
 }
