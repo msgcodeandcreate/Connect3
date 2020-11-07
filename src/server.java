@@ -10,20 +10,23 @@ public class server {
         try {
             serverSocket = new ServerSocket(portNumber);
 
-        } catch (IOException e){
-            System.err.println("Port: "+portNumber+" konnte nicht benutzt werden");
-            System.exit(1);
-        }
 
-        //akzeptiere alle Clients
+            //akzeptiere alle Clients
         while(true){
             try{
                 
 				Socket socket = serverSocket.accept();
             }catch(IOException e){
-                System.out.println("Accept failed on: "+portNumber)
+                System.out.println("Accept failed on: "+portNumber);
             }
         }
+
+        } catch (IOException e){
+            System.err.println("Port: "+portNumber+" konnte nicht benutzt werden");
+            System.exit(1);
+        }
+
+        
 
     }
 
