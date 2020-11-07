@@ -12,9 +12,9 @@ public class ClientThread extends Server implements Runnable {
 
     private Socket socket;
     private PrintWriter clientOut;
-    private ChatServer server;
+    private Server server;
 
-    public ClientThread(ChatServer server, Socket socket){
+    public ClientThread(Server server, Socket socket){
         this.server = server;
         this.socket = socket;
     }

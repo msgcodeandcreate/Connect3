@@ -19,7 +19,7 @@ public class Server {
         server.startServer();
     }
 
-    public ChatServer(int portNumber){
+    public Server(int portNumber){
         this.serverPort = portNumber;
     }
 
