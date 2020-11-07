@@ -8,11 +8,9 @@ Java based Socket Chat Application
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+Chat Application designed during msg Code & Create event 2020.  
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
@@ -25,10 +23,6 @@ Add more general information about project. What the purpose of the project is? 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
 
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
-
 ## Features
 List of features ready and TODOs for future development
 * Awesome feature 1
@@ -36,11 +30,8 @@ List of features ready and TODOs for future development
 * Awesome feature 3
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Basic Chat functionality
+* matching feature
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
-
-## Inspiration
-Add here credits. Project inspired by..., based on...
+Project is _in progress_
