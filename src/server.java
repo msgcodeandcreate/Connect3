@@ -2,6 +2,7 @@ import java.net.*;
 import java.io.*;
 
 public class server {
+<<<<<<< HEAD
     //private ServerSocket serverSocket;
     public static void main(String[] args){
         ServerSocket serverSocket;
@@ -27,5 +28,7 @@ public class server {
 
     }
 
+=======
+>>>>>>> 6b0ea7dbc7325807d3acfb7a3e6e7134e495d6dc
 
 }
