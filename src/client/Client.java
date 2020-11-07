@@ -17,7 +17,7 @@ public class Client {
             //Initializing Socket Connection at 'localhost:4444'
             clientSocket = new Socket("localhost", port);
             Thread.sleep(1000);
-            Thread server = new Thread(new serverThread(clientSocket, name));
+            Thread server = new Thread(new ServerThread(clientSocket, name));
             server.start();
         } catch (IOException e){
             System.err.println("Connection Failed.");
