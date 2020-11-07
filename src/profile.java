@@ -13,7 +13,7 @@ public class Profile {
 
   public boolean checkPassword()
   {
-	  for (i = 1; i <= 6; i++){
+	  for (int i = 1; i <= 6; i++){
 		  if((username.equals(accounts[i][0])) && (password.equals(accounts[i][1])))
 	    	  return true;
 	  }
