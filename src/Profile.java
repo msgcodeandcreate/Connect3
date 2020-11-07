@@ -10,7 +10,7 @@ public class Profile {
 	  this.username = username;
 	  this.password = password;
 
-	  
+	  updateAccounts(this, accounts);
 
   }
 
