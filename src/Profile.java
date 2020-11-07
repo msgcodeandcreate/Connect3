@@ -4,18 +4,53 @@ import java.nio.file.Paths;
 
 public class Profile {
 
-    private String username;
-    private String password;
-    private Boolean[] prefered;
+    static private String username;
+    static private String password;
+    static private Boolean[] likings;
 	static String fileName = "profile.txt";
 
 	public static String load() {
+		String profileData = "";
     	try {
-			return new String(Files.readAllBytes(Paths.get(fileName)));
+			profileData =  new String(Files.readAllBytes(Paths.get(fileName)));
 		} catch (IOException e) {
     		System.out.println(e.fillInStackTrace());
-    		return "";
 		}
+
+    	//Extract username
+		int pos = profileData.indexOf("}");
+		username = profileData.substring(1, pos);
+		profileData = profileData.substring(pos+1);
+
+		//Extract password
+		pos = profileData.indexOf("}");
+		password = profileData.substring(1, pos);
+		profileData = profileData.substring(pos+1);
+
+		//Extract likings
+		int count = 0;
+		for (int i = 0; i < profileData.length(); i++) {
+			if (profileData.charAt(i) == ',') {
+				count++;
+			}
+		}
+
+		likings = new Boolean[count+1];
+		for (int i=0; profileData != "}"; i++){
+			pos = profileData.indexOf(",");
+			if (profileData.substring(1, pos) == "true")
+				likings[i] = true;
+			else
+				likings[i] = false;
+			profileData = profileData.substring(pos+1);
+		}
+
+
+		System.out.println(profileData);
+
+
+
+    	return profileData;
 	}
 
 	public static void save(String profileData){
