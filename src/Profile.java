@@ -4,9 +4,9 @@ import java.nio.file.Paths;
 
 public class Profile {
 
-    static private String username;
-    static private String password;
-    static private Boolean[] likings;
+    static String username;
+    static String password;
+    static String[] likings = new String[7];
 	static String fileName = "profile.txt";
 
 	public static String load() {
@@ -25,29 +25,24 @@ public class Profile {
 		//Extract password
 		pos = profileData.indexOf("}");
 		password = profileData.substring(1, pos);
+		profileData = profileData.substring(pos+2);
+
+		//Extract likings/Dumb Hardcoding
+		for (int i=0; i < likings.length-1; i++){
+			pos = profileData.indexOf(",");
+			System.out.println(profileData.substring(0, pos));
+			likings[i] = profileData.substring(0, pos);
+
+			profileData = profileData.substring(pos+1);
+			System.out.println(profileData);
+		}
+		pos = profileData.indexOf("}");
+		likings[likings.length-1] = profileData.substring(0, pos);
 		profileData = profileData.substring(pos+1);
 
-		//Extract likings
-		int count = 0;
-		for (int i = 0; i < profileData.length(); i++) {
-			if (profileData.charAt(i) == ',') {
-				count++;
-			}
+		for (String bool : likings){
+			System.out.println(bool);
 		}
-
-		likings = new Boolean[count+1];
-		for (int i=0; profileData != "}"; i++){
-			pos = profileData.indexOf(",");
-			if (profileData.substring(1, pos) == "true")
-				likings[i] = true;
-			else
-				likings[i] = false;
-			profileData = profileData.substring(pos+1);
-		}
-
-
-		System.out.println(profileData);
-
 
 
     	return profileData;
