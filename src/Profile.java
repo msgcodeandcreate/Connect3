@@ -6,13 +6,8 @@ public class Profile {
 
     private String username;
     private String password;
+    private Boolean[] prefered;
 	static String fileName = "profile.txt";
-
-
-    public Profile(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
 
 	public static String load() {
     	try {
