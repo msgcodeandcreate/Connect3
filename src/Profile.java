@@ -16,42 +16,37 @@ public class Profile {
 		} catch (IOException e) {
     		System.out.println(e.fillInStackTrace());
 		}
+    	String tmp = profileData;
 
     	//Extract username
-		int pos = profileData.indexOf("}");
-		username = profileData.substring(1, pos);
-		profileData = profileData.substring(pos+1);
+		int pos = tmp.indexOf("}");
+		username = tmp.substring(1, pos);
+		tmp = tmp.substring(pos+1);
 
 		//Extract password
-		pos = profileData.indexOf("}");
-		password = profileData.substring(1, pos);
-		profileData = profileData.substring(pos+2);
+		pos = tmp.indexOf("}");
+		password = tmp.substring(1, pos);
+		tmp = tmp.substring(pos+2);
 
 		//Extract likings/Dumb Hardcoding
 		for (int i=0; i < likings.length-1; i++){
-			pos = profileData.indexOf(",");
-			System.out.println(profileData.substring(0, pos));
-			likings[i] = profileData.substring(0, pos);
+			pos = tmp.indexOf(",");
+			likings[i] = tmp.substring(0, pos);
 
-			profileData = profileData.substring(pos+1);
-			System.out.println(profileData);
+			tmp = tmp.substring(pos+1);
 		}
-		pos = profileData.indexOf("}");
-		likings[likings.length-1] = profileData.substring(0, pos);
-		profileData = profileData.substring(pos+1);
-
-		for (String bool : likings){
-			System.out.println(bool);
-		}
-
+		pos = tmp.indexOf("}");
+		likings[likings.length-1] = tmp.substring(0, pos);
+		tmp = tmp.substring(pos+1);
 
     	return profileData;
 	}
 
-	public static void save(String profileData){
+	public static void save(){
 		try {
+			//Prepare for more dumb hardcoding
 			FileWriter fw = new FileWriter("profile.txt");
-			fw.write(profileData);
+			fw.write("{"+username+"}{"+password+"}{"+likings[0]+","+likings[1]+","+likings[2]+","+likings[3]+","+likings[4]+","+likings[5]+","+likings[6]+"}");
 			fw.close();
 			System.out.println("Successfully wrote to the file.");
 		} catch (IOException e) {

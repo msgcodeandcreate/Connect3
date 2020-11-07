@@ -1,3 +1,6 @@
+package server;
+
+import server.Server;
 
 import java.net.*;
 import java.io.*;
@@ -54,7 +57,7 @@ public class ClientThread extends Server implements Runnable {
 
 
     public String checkInput(String input){
-        //Get username
+        /*//Get username
         int position = input.indexOf(">");
         String newName = input.substring(0, position-1);
 
@@ -97,7 +100,7 @@ public class ClientThread extends Server implements Runnable {
         //TODO (curse word filter)
 
         //Checks if username belongs to new user
-        for (String name : usersOnline){
+        /*for (String name : usersOnline){
             if (newName == name){
                 return input;
             }
@@ -108,7 +111,7 @@ public class ClientThread extends Server implements Runnable {
                 return input;
             }
         }
-
+        */
         return input;
     }
 
