@@ -59,9 +59,9 @@ public class Profile {
 		try {
 			File f = new File("profile.txt");
 			if (f.createNewFile()) {
-				System.out.println("File created: " + f.getName());
+				System.out.println("Profile created.");
 			} else {
-				System.out.println("File already exists.");
+				System.out.println("Profile already exists.");
 			}
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
