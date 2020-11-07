@@ -7,9 +7,10 @@ import java.util.ArrayList;
 public class Server {
 
     private static final int portNumber = 4444;
+    String[] usersOnline = new String[32];
 
     private int serverPort;
-    private ArrayList<ClientThread> clients; // or "protected static List<ClientThread> clients;"
+    private ArrayList<ClientThread> clients;
 
     public Server() {
     }
@@ -41,11 +42,11 @@ public class Server {
 
     private void acceptClients(ServerSocket serverSocket){
 
-        System.out.println("server starts port = " + serverSocket.getLocalSocketAddress());
+        System.out.println("Server starts port " + serverSocket.getLocalSocketAddress());
         while(true){
             try{
                 Socket socket = serverSocket.accept();
-                System.out.println("accepts : " + socket.getRemoteSocketAddress());
+                System.out.println("Accepting: " + socket.getRemoteSocketAddress());
                 ClientThread client = new ClientThread(this, socket);
                 Thread thread = new Thread(client);
                 thread.start();
