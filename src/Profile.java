@@ -10,13 +10,13 @@ public class Profile {
 	  this.username = username;
 	  this.password = password;
 
-	  updateAccounts(this, accounts);
+	  accounts = updateAccounts(this, accounts);
 
   }
 
   public boolean checkPassword()
   {
-	  for (int i = 1; i <= 6; i++){
+	  for (int i = 0; i < accounts.length; i++){
 		  if((username.equals(accounts[i][0])) && (password.equals(accounts[i][1])))
 	    	  return true;
 	  }
