@@ -95,7 +95,7 @@ public class MainLoginController  {
             Notification notification = Notifications.ERROR;
             TrayNotification tray = new TrayNotification();
             tray.setTitle("Attention!!!");
-            tray.setMessage("Email or Password should not Empty.");
+            tray.setMessage("Email or Password should not be Empty.");
             tray.setNotification(notification);
             tray.showAndDismiss(Duration.millis(3000));
 

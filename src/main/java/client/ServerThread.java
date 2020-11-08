@@ -25,6 +25,10 @@ public class ServerThread implements Runnable{
         }
     }
 
+    /**
+     * Prints connection information and begins to print the input Stream from the Server.
+     * when there are messages on the Server thread, sends those to the Server.
+     */
     @Override
     public void run(){
         System.out.println("Welcome " + userName);
