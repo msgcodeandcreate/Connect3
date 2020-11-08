@@ -37,7 +37,7 @@ To-do list:
 * Server Commands
 
 ## Team
-![https://github.com/alicelell](alicelell), ![https://github.com/cac02](cac02), ![https://github.com/k47ha](K Groß), ![https://github.com/SimonGlomb](SimonGlomb), ![https://github.com/simonmichau](simonmichau), ![https://github.com/TheCodeAndDesign](TheCodeAndDesign) 
+![alicelell](https://github.com/alicelell), ![cac02](https://github.com/cac02), ![k47ha](https://github.com/k47ha), ![SimonGlomb](https://github.com/SimonGlomb), ![simonmichau](https://github.com/simonmichau), ![TheCodeAndDesign](https://github.com/TheCodeAndDesign) 
 
 ## Status
 Project is _in progress_
