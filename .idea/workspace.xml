@@ -23,32 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7647397d-0c9a-41dc-b9da-6ae50aa81285" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_PlusHaze_TrayNotification_a8bfa597eb.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Connect3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sample/MainLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sample/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/Group_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/cityscape-icon-symbol-web-element_1150-1791.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/connect3.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/profile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/connect3chat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/MainLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/MainLoginController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +59,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
@@ -108,13 +89,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,7 +117,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604789105574</updated>
-      <workItem from="1604789106718" duration="1871000" />
+      <workItem from="1604789106718" duration="2257000" />
+      <workItem from="1604792789041" duration="976000" />
     </task>
     <servers />
   </component>
@@ -151,6 +135,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="761" y="277" key="#Project_Structure" timestamp="1604789652554">
@@ -161,5 +146,29 @@
       <screen x="0" y="23" width="2048" height="1257" />
     </state>
     <state x="1151" y="347" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.2048.1257@0.23.2048.1257" timestamp="1604789147030" />
+    <state width="1403" height="356" key="GridCell.Tab.0.bottom" timestamp="1604823304425">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state width="1403" height="356" key="GridCell.Tab.0.bottom/0.23.2048.1257@0.23.2048.1257" timestamp="1604823304425" />
+    <state width="1403" height="356" key="GridCell.Tab.0.center" timestamp="1604823304424">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state width="1403" height="356" key="GridCell.Tab.0.center/0.23.2048.1257@0.23.2048.1257" timestamp="1604823304424" />
+    <state width="1403" height="356" key="GridCell.Tab.0.left" timestamp="1604823304424">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state width="1403" height="356" key="GridCell.Tab.0.left/0.23.2048.1257@0.23.2048.1257" timestamp="1604823304424" />
+    <state width="1403" height="356" key="GridCell.Tab.0.right" timestamp="1604823304425">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state width="1403" height="356" key="GridCell.Tab.0.right/0.23.2048.1257@0.23.2048.1257" timestamp="1604823304425" />
+    <state x="873" y="435" key="Vcs.Push.Dialog.v2" timestamp="1604822552287">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="873" y="435" key="Vcs.Push.Dialog.v2/0.23.2048.1257@0.23.2048.1257" timestamp="1604822552287" />
+    <state x="971" y="328" width="604" height="735" key="find.popup" timestamp="1604792620088">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="971" y="328" width="604" height="735" key="find.popup/0.23.2048.1257@0.23.2048.1257" timestamp="1604792620088" />
   </component>
 </project>

@@ -44,7 +44,7 @@ public class MainLoginController  {
                 client.startClient();
                 try {
 
-                    Parent chatParent = FXMLLoader.load(getClass().getResource("/chat/ChatPanel.fxml"));
+                    Parent chatParent = FXMLLoader.load(getClass().getResource("/connect3chat.fxml"));
                     Scene chatScene = new Scene(chatParent);
                     Stage chatStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     chatStage.setScene(chatScene);
