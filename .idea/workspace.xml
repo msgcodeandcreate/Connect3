@@ -24,13 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7647397d-0c9a-41dc-b9da-6ae50aa81285" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
