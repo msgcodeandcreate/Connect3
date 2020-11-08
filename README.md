@@ -8,6 +8,7 @@ Socket based Chat Application
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
+* [Credits](#credits)
 
 ## General info
 Chat Application designed during msg Code & Create event 2020.
@@ -35,5 +36,11 @@ To-do list:
 * matching feature
 * Server Commands
 
+## Team
+![https://github.com/alicelell](alicelell), ![https://github.com/cac02](cac02), ![https://github.com/k47ha](K Groß), ![https://github.com/SimonGlomb](SimonGlomb), ![https://github.com/simonmichau](simonmichau), ![https://github.com/TheCodeAndDesign](TheCodeAndDesign) 
+
 ## Status
 Project is _in progress_
+
+## Credits
+![https://carbon.now.sh/](Carbon) for Source Code pictures
