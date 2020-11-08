@@ -1,42 +1,27 @@
 package client;
 import java.io.IOException;
 import java.net.Socket;
+import java.rmi.server.UID;
 import java.util.Scanner;
 
 public class Client {
-
-    private static final String host = "localhost";
-    private static final int portNumber = 4444;
 
     private String userName;
     private String serverHost;
     private int serverPort;
     private Scanner userInputScanner;
 
-    public static void main(String[] args){
-        String readName = null;
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Please input username:");
-        while(readName == null || readName.trim().equals("")){
-            // null, empty, whitespace(s) not allowed.
-            readName = scan.nextLine();
-            if(readName.trim().equals("")){
-                System.out.println("Invalid. Please enter again:");
-            }
-        }
 
-        Client client = new Client(readName, host, portNumber);
-        client.startClient(scan);
-    }
 
-    private Client(String userName, String host, int portNumber){
+    public Client(String userName){
         this.userName = userName;
-        this.serverHost = host;
-        this.serverPort = portNumber;
+        this.serverHost = "localhost";
+        this.serverPort = 4444;
     }
 
-    private void startClient(Scanner scan){
+    public void startClient(){
         try{
+            Scanner scan = new Scanner(System.in);
             Socket socket = new Socket(serverHost, serverPort);
             Thread.sleep(1000); // waiting for network communicating.
 
