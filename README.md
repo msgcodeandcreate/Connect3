@@ -43,4 +43,4 @@ To-do list:
 Project is _in progress_
 
 ## Credits
-![https://carbon.now.sh/](Carbon) for Source Code pictures
+![Carbon](https://carbon.now.sh/) for Source Code pictures
