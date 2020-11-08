@@ -33,7 +33,7 @@ List of features ready and TODOs for future development
 
 To-do list:
 * matching feature
-* More Server Management and Tools
+* Server Commands
 
 ## Status
 Project is _in progress_
