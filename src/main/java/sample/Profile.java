@@ -1,7 +1,5 @@
 package sample;
 
-import client.Client;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,13 +8,13 @@ import java.nio.file.Paths;
 
 public class Profile {
 
-    static String username = "";
+    static String username = "user";
     static String password;
     static String[] likings = new String[7];
     static String fileName = "profile.txt";
 
     public static void main(String[] args) {
-        Client a = new Client(username);
+        client.Client a = new client.Client(username);
         a.startClient();
     }
 
