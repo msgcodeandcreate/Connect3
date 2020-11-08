@@ -20,6 +20,8 @@ Chat Application designed during msg Code & Create event 2020.
 
 ## Technologies
 * JavaFX
+* Maven
+* [Tray Notifications](https://github.com/PlusHaze/TrayNotification)
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
@@ -31,7 +33,6 @@ List of features ready and TODOs for future development
 
 To-do list:
 * matching feature
-* UI
 * More Server Management and Tools
 
 ## Status
