@@ -1,5 +1,7 @@
 package sample;
 
+import client.Client;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,10 +10,15 @@ import java.nio.file.Paths;
 
 public class Profile {
 
-    static String username;
+    static String username = "";
     static String password;
     static String[] likings = new String[7];
     static String fileName = "profile.txt";
+
+    public static void main(String[] args) {
+        Client a = new Client(username);
+        a.startClient();
+    }
 
     /**
      * Reads data from Profile file and extracts username, password and likings,
